@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 int main() {
-  while ( 1 ) {
     system ( "./../push.sh" );
     sleep ( 1 );
-  }
+    system ( "./../compile.sh" );
 }
