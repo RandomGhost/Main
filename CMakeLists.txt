@@ -1,0 +1,11 @@
+PROJECT ( ME CXX )
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+ADD_DEFINITIONS(-std=c++0x -ggdb)
+
+file ( 
+  GLOB_RECURSE
+  SRC
+  src/*.cc
+)
+
+ADD_EXECUTABLE( me main.cc ${SRC} )
