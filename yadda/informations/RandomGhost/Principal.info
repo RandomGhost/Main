@@ -1,0 +1,12 @@
+RandomGhost : # {
+    Principal : # {
+	Moi : a[href="/RandomGhost"];
+	Popular_repo : # {
+	    Depot : ~a[href="/RandomGhost/<string()>"]~; (0)
+        }
+    }
+
+
+  
+
+}

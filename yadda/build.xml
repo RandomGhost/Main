@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GPJ" default="test">
+
+    <property environment="env" />
+    <property name="reportPath" value="${env.WORKSPACE}/reports" />
+    <property name="reportName" value="yadda.json" />
+    <!-- Configuration du module jUnit sur sqliPICBridge -->
+    <property name="picBridge.user" value="" />
+    <property name="picBridge.password" value="" />
+    <property name="picBridge.projectCode" value="" />
+    <property name="picBridge.projectId" value="" />
+    <property name="picBridge.stepId" value="" /> <!-- Etape : Echange Interne -->
+    <property name="picBridge.url" value="" />
+    <target name="test" depends="clean, npm, launch-test" />
+    <target name="clean" description="Nettoyage des dossiers">
+        <echo>Nettoyage des dossiers</echo>
+        <delete dir="${reportPath}" />
+        <mkdir dir="${reportPath}" />
+    </target>
+    <target name="check-npm" description="Vérification de la présence des librairies NodeJS">
+        <echo>Contrôle des modules nodeJS</echo>
+        <condition property="npmRequired">
+            <not>
+                <available file="${env.WORKSPACE}/node_modules" type="dir"/>
+            </not>
+        </condition>
+    </target>
+    <target name="npm" description="Installation des librairies NodeJS" depends="check-npm" if="npmRequired">
+        <echo>Mise à jour des modules nodeJS</echo>
+        <exec executable="npm" dir="${env.WORKSPACE}" failonerror="true">
+            <arg line="install" />
+        </exec>
+<!--
+        <symlink action="delete" link="/usr/local/bin/phantomjs" failonerror="false"/>
+        <symlink action="delete" link="/usr/bin/phantomjs" failonerror="false"/>
+        <symlink action="delete" link="/usr/bin/casperjs" failonerror="false"/>
+        <symlink action="delete" link="/usr/local/bin/casperjs" failonerror="false"/>
+        <symlink link="/usr/bin/phantomjs" resource="/usr/lib/node_modules/yadda-casperjs-toolkit/node_modules/casperjs/node_modules/phantomjs/lib/phantom/bin/phantomjs"/>
+        <symlink link="/usr/local/bin/phantomjs" resource="/usr/lib/node_modules/yadda-casperjs-toolkit/node_modules/casperjs/node_modules/phantomjs/lib/phantom/bin/phantomjs"/>
+        <symlink link="/usr/local/bin/casperjs" resource="/usr/lib/node_modules/yadda-casperjs-toolkit/node_modules/casperjs/bin/casperjs"/>
+        <symlink link="/usr/bin/casperjs" resource="/usr/lib/node_modules/yadda-casperjs-toolkit/node_modules/casperjs/bin/casperjs"/>
+-->
+    </target>
+    <target name="launch-test" description="Lancement des tests Yadda">
+        <echo>Lancement des tests Casper</echo>
+        <exec dir="${env.WORKSPACE}" executable="casperjs" >
+            <arg line="test
+            --includes=${env.WORKSPACE}/support/include.js
+            --workspace=${env.WORKSPACE}
+            ${env.WORKSPACE}/test.js
+            --xunit=${reportPath}/casperjs.xml"/>
+        </exec>
+    </target>
+</project>

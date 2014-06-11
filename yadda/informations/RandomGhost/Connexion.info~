@@ -1,0 +1,7 @@
+RandomGhost : # {
+    Connexion : # {
+	Login : #login_field;
+	Pass : #password;
+	Sign_in : ~input[value="Sign in"]~;
+    }
+}

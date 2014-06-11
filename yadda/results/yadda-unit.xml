@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites time="0.55"><testsuite name="Untitled suite in null" tests="1" failures="1" errors="0" time="0.002" timestamp="2014-04-17T14:41:41.496Z" package="node_modules/casperjs/tests/run"><testcase name="SyntaxError: Parse error" classname="node_modules/casperjs/tests/run" time="0.002"><failure type="error">SyntaxError: Parse error</failure></testcase><system-out></system-out></testsuite><testsuite name="Creation de fiche Assure inconnu" tests="1" failures="1" errors="0" time="0.061" timestamp="2014-04-17T14:41:41.497Z" package="./test"><testcase name="Error: Scenario cannot be interpreted
+Given je suis un utilisateur IJ &lt;-- Undefined Step
+When je me connecte &lt;-- Undefined Step
+And je clique sur Consultation et je recherche un contrat a partir de son nom &lt;-- Undefined Step
+And je clique sur rechercher &lt;-- Undefined Step
+And je remplis le nom, le prenom, le code postal et la ville de l'assure puis je clique sur [Créer Assuré inconnu]. Je clique ensuite sur [Créer une fiche] &lt;-- Undefined Step
+And je rempli la fiche  &lt;-- Undefined Step
+And la Nature de l appel : [IJ] puis [Avis défavorable sur la garantie] &lt;-- Undefined Step
+And une Question : [] &lt;-- Undefined Step
+And une Réponse : [] &lt;-- Undefined Step
+And la Famille de litige : [Activité professionnelles] &lt;-- Undefined Step
+And le code cause de litige : [Fournisseur, sous traitant(Liti...)] &lt;-- Undefined Step
+And Saisir au moins une demande de pièces  &lt;-- Undefined Step
+And Choisir une Nature du traitement &lt;-- Undefined Step
+And Cliquer sur le bouton [Clore] &lt;-- Undefined Step
+Then L'agenda du user s'affiche &lt;-- Undefined Step
+And la recherche s'affiche. l'auto-complétion se lance dès que [3] caractères sont entrés &lt;-- Undefined Step
+And le bandeau du milieu s'affiche et les champs du contrat passent en lecture seule &lt;-- Undefined Step
+And une fiche s'ouvre au statut [En cours] et la mention [Assuré inconnu] apparait dans la zone d'identification de l'assuré. &lt;-- Undefined Step
+And la fiche passe au status [Clos] &lt;-- Undefined Step" classname="./test" time="0.061"><error type="error">Error: Scenario cannot be interpreted
+Given je suis un utilisateur IJ &lt;-- Undefined Step
+When je me connecte &lt;-- Undefined Step
+And je clique sur Consultation et je recherche un contrat a partir de son nom &lt;-- Undefined Step
+And je clique sur rechercher &lt;-- Undefined Step
+And je remplis le nom, le prenom, le code postal et la ville de l'assure puis je clique sur [Créer Assuré inconnu]. Je clique ensuite sur [Créer une fiche] &lt;-- Undefined Step
+And je rempli la fiche  &lt;-- Undefined Step
+And la Nature de l appel : [IJ] puis [Avis défavorable sur la garantie] &lt;-- Undefined Step
+And une Question : [] &lt;-- Undefined Step
+And une Réponse : [] &lt;-- Undefined Step
+And la Famille de litige : [Activité professionnelles] &lt;-- Undefined Step
+And le code cause de litige : [Fournisseur, sous traitant(Liti...)] &lt;-- Undefined Step
+And Saisir au moins une demande de pièces  &lt;-- Undefined Step
+And Choisir une Nature du traitement &lt;-- Undefined Step
+And Cliquer sur le bouton [Clore] &lt;-- Undefined Step
+Then L'agenda du user s'affiche &lt;-- Undefined Step
+And la recherche s'affiche. l'auto-complétion se lance dès que [3] caractères sont entrés &lt;-- Undefined Step
+And le bandeau du milieu s'affiche et les champs du contrat passent en lecture seule &lt;-- Undefined Step
+And une fiche s'ouvre au statut [En cours] et la mention [Assuré inconnu] apparait dans la zone d'identification de l'assuré. &lt;-- Undefined Step
+And la fiche passe au status [Clos] &lt;-- Undefined Step
+    at /home/yadda/yadda/node_modules/yadda/lib/Interpreter.js:39
+    at /home/yadda/yadda/node_modules/yadda/lib/Yadda.js:35
+    at /home/yadda/yadda/node_modules/yadda/lib/plugins/CasperPlugin.js:27
+    at ./test.js:33
+    at /home/yadda/yadda/node_modules/async/lib/async.js:148
+    at /home/yadda/yadda/node_modules/async/lib/async.js:150
+    at suite (./test.js:44)
+    at /home/yadda/yadda/node_modules/casperjs/modules/tester.js:1064
+    at /home/yadda/yadda/node_modules/casperjs/bin/bootstrap.js:60
+    at begin (/home/yadda/yadda/node_modules/casperjs/modules/tester.js:1093)
+    at casperTest (./test.js:45)</error><failure type="uncaughtError">Error: Scenario cannot be interpreted
+Given je suis un utilisateur IJ &lt;-- Undefined Step
+When je me connecte &lt;-- Undefined Step
+And je clique sur Consultation et je recherche un contrat a partir de son nom &lt;-- Undefined Step
+And je clique sur rechercher &lt;-- Undefined Step
+And je remplis le nom, le prenom, le code postal et la ville de l'assure puis je clique sur [Créer Assuré inconnu]. Je clique ensuite sur [Créer une fiche] &lt;-- Undefined Step
+And je rempli la fiche  &lt;-- Undefined Step
+And la Nature de l appel : [IJ] puis [Avis défavorable sur la garantie] &lt;-- Undefined Step
+And une Question : [] &lt;-- Undefined Step
+And une Réponse : [] &lt;-- Undefined Step
+And la Famille de litige : [Activité professionnelles] &lt;-- Undefined Step
+And le code cause de litige : [Fournisseur, sous traitant(Liti...)] &lt;-- Undefined Step
+And Saisir au moins une demande de pièces  &lt;-- Undefined Step
+And Choisir une Nature du traitement &lt;-- Undefined Step
+And Cliquer sur le bouton [Clore] &lt;-- Undefined Step
+Then L'agenda du user s'affiche &lt;-- Undefined Step
+And la recherche s'affiche. l'auto-complétion se lance dès que [3] caractères sont entrés &lt;-- Undefined Step
+And le bandeau du milieu s'affiche et les champs du contrat passent en lecture seule &lt;-- Undefined Step
+And une fiche s'ouvre au statut [En cours] et la mention [Assuré inconnu] apparait dans la zone d'identification de l'assuré. &lt;-- Undefined Step
+And la fiche passe au status [Clos] &lt;-- Undefined Step</failure></testcase><system-out></system-out></testsuite><testsuite name="test de connexion GPJ" tests="5" failures="2" errors="0" time="0.487" timestamp="2014-04-17T14:41:41.497Z" package="./test"><testcase name="Incorrect title - Connexion" classname="./test" time="0.296"></testcase><testcase name="Find &quot;INT&quot; within the selector &quot;span.recette&quot;" classname="./test" time="0.017"></testcase><testcase name="Selector is visible" classname="./test" time="0.001"></testcase><testcase name="TypeError: 'undefined' is not a function (evaluating 'casper.sqliScreenshot('login-form-submit')')" classname="./test" time="0.154"><error type="error">TypeError: 'undefined' is not a function (evaluating 'casper.sqliScreenshot('login-form-submit')')
+    at /home/yadda/yadda/definitions/first-connexion.js:36
+    at invoke (/home/yadda/yadda/node_modules/yadda/lib/fn.js:29)
+    at /home/yadda/yadda/node_modules/yadda/lib/Macro.js:46
+    at /home/yadda/yadda/node_modules/yadda/lib/plugins/CasperPlugin.js:21
+    at runStep (/home/yadda/yadda/node_modules/casperjs/modules/casper.js:1553)
+    at checkStep (/home/yadda/yadda/node_modules/casperjs/modules/casper.js:399)</error><failure type="uncaughtError">TypeError: 'undefined' is not a function (evaluating 'casper.sqliScreenshot('login-form-submit')')</failure></testcase><testcase name="Incorrect title - Connexion" classname="./test" time="0.019"><failure type="assertTitle">Incorrect title - Connexion</failure></testcase><system-out></system-out></testsuite></testsuites>

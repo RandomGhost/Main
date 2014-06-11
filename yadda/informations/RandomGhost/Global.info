@@ -1,0 +1,6 @@
+RandomGhost : # {
+    Global : # {
+	User : RandomGhost;
+	Pass : gitcommit0;
+    }
+}

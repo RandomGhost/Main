@@ -1,0 +1,18 @@
+RandomGhost : # {
+    Depot : # {
+	Task : # {
+	    Issue : ~a[href="/RandomGhost/<string()>/issues"]~;(0)
+	    Wiki : #;
+	}
+	
+	
+	Issue : # {
+	    New_issue : ~a[href="/RandomGhost/<string()>/issues/new"]~;(0)
+
+
+	    Title : #issue_title;
+	    Comment : ~textarea[id^="issue_body"]~;
+	    Submit_new : ~button[class="button primary"]~;
+	}
+    }
+}
