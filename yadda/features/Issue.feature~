@@ -1,7 +1,0 @@
-feature: Creation_issue
-
-Scenario: Creation d'une issue avec du texte debile
-
-
-	  Given je suis un utilisateur {RandomGhost}
-	  When je me connecte
